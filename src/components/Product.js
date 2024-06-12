@@ -7,7 +7,7 @@ import { BsPlus, BsEyeFill } from 'react-icons/bs'
 import { CartContext } from '../contexts/CartContext';
 
 const Product = ({ product }) => {
-  const { addToCart } =  useContext(CartContext)
+  const { addToCart, isAlert } =  useContext(CartContext)
   const {id, image, category, title, price} = product
   return <div>
     <div className='border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition'>

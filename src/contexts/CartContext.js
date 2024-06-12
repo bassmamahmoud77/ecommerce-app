@@ -25,9 +25,6 @@ const CartProvider = ({ children }) => {
       setItemAmount(amount);
     }
   }, [cart]);
-
-
-
   const addToCart = (product, id) => {
     const newItem = { ...product, amount: 1 };
 
@@ -88,7 +85,7 @@ const CartProvider = ({ children }) => {
         increaseAmount,
         decreaseAmount,
         itemAmount,
-        total
+        total,
       }}
     >
       {children}
